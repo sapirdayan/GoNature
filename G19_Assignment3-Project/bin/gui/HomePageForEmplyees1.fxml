@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HomePageRegularEmployeeController">
+   <children>
+      <Text layoutX="16.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature" textAlignment="CENTER" wrappingWidth="178.31704711914062">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="165.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="516.0" layoutY="133.0" text="nasmat.ammar" />
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="385.0" layoutY="167.0" startX="217.017578125" startY="-34.66667175292969" />
+      <ImageView fitHeight="164.0" fitWidth="669.0" layoutY="52.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SearchForAPaymentBtn" fitHeight="39.0" fitWidth="30.0" layoutX="16.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_170053.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="114.0" layoutY="130.0" text="Menu">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="567.5" layoutX="105.0" layoutY="159.0" startX="-109.0" />
+      <Label layoutX="51.0" layoutY="179.0" onMouseClicked="#SearchForAPaymentFunc" text="Payment for a specific order">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="50.0" layoutY="239.0" onMouseClicked="#CheckingTheVacancyFunc" text="Checking the vacancy in the park">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="52.0" layoutY="294.0" onMouseClicked="#MakeAnOrder" text="Make a new order">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fx:id="CheckingTheVacancyBtn" fitHeight="39.0" fitWidth="30.0" layoutX="16.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/141551-200.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="MakeAnOrderBtn" fitHeight="39.0" fitWidth="30.0" layoutX="16.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/026f3d3b617ad8234f2fb8f9b3b4d310.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Line endX="-126.83331298828125" endY="277.0" layoutX="409.0" layoutY="179.0" startX="-126.83331298828125" startY="-51.93560791015625" />
+      <Line endX="566.0" endY="0.06439208984375" layoutX="105.0" layoutY="127.0" startX="-103.0" startY="0.06439208984375" strokeMiterLimit="20.0" strokeWidth="3.0" />
+      <Line endX="566.0" endY="0.06439208984375" layoutX="103.0" layoutY="52.0" startX="-103.0" startY="0.06439208984375" strokeMiterLimit="20.0" strokeWidth="3.0" />
+      <Label layoutX="233.0" layoutY="20.0" text="Employee home page" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="201.0" text="Hello worker!" textFill="#d40707">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="292.0" layoutY="229.0" prefHeight="59.0" prefWidth="365.0" text="Do not forget to ask travelers to behave according to &#10;the guidelines of the Ministry of Health.">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="ExitBtn" fitHeight="39.0" fitWidth="30.0" layoutX="16.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/157899.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="344.0" onMouseClicked="#ExitFunc" text="Exit of visitor">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fx:id="ContactUsBtn" fitHeight="17.0" fitWidth="22.0" layoutX="637.0" layoutY="23.0" onMouseClicked="#ContactUsFunc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_97207.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="LogoutBtn" layoutX="617.0" layoutY="133.0" onMouseClicked="#LogoutFunc" text="Logout" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</Pane>

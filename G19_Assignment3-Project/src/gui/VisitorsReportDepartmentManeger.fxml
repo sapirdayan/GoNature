@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="LabelStatus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReportOfTheNumberOfVisitor1Controller">
+   <children>
+      <Text layoutX="13.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label layoutX="209.0" layoutY="22.0" text="Report of the number of visitors" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="765.0" layoutY="53.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="221.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="597.0" layoutY="25.0" prefHeight="17.0" prefWidth="79.0" />
+      <Label fx:id="logoutbtntxt" layoutX="699.0" layoutY="25.0" lineSpacing="1.0" onMouseClicked="#logoutFunc" text="(Log out)" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="473.0" layoutY="58.0" startX="217.017578125" startY="-34.66667175292969" />
+      <BarChart fx:id="CancelRep" barGap="1.0" categoryGap="1.0" layoutX="4.0" layoutY="176.0" legendSide="LEFT" prefHeight="248.0" prefWidth="757.0" title="Visitors number report">
+         <xAxis>
+            <CategoryAxis fx:id="X" side="LEFT" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="Y" label="Number of visitors" nodeOrientation="LEFT_TO_RIGHT" upperBound="250.0">
+               <tickLabelFont>
+                  <Font name="David" size="12.0" />
+               </tickLabelFont></NumberAxis>
+         </yAxis>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#c0f2c3" />
+               </light>
+            </Lighting>
+         </effect>
+      </BarChart>
+      <Button fx:id="BackBtn" layoutX="689.0" layoutY="647.0" mnemonicParsing="false" onAction="#BackFunc" prefHeight="26.0" prefWidth="54.0" text="Back">
+         <effect>
+            <InnerShadow choke="0.15" color="#8d7d7d" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="59.0" layoutY="537.0" prefHeight="20.0" prefWidth="174.0" text="Total family subscriptions:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="511.0" text="Total individual visitors:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="482.0" prefHeight="17.0" prefWidth="99.0" text="Total visitors:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="totalvisitors" layoutX="241.0" layoutY="483.0" prefHeight="17.0" prefWidth="227.0" />
+      <Label fx:id="TotalIndividual" layoutX="246.0" layoutY="512.0" prefHeight="17.0" prefWidth="233.0" />
+      <Label fx:id="TotalSubscrbition" layoutX="241.0" layoutY="539.0" prefHeight="17.0" prefWidth="214.0" />
+      <Label layoutX="59.0" layoutY="567.0" prefHeight="17.0" prefWidth="165.0" text="Total organized groups:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="Totalorgnized" layoutX="246.0" layoutY="568.0" prefHeight="17.0" prefWidth="199.0" />
+      <Circle fx:id="CircleStatus" fill="#ff231f" layoutX="66.0" layoutY="611.0" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Circle>
+      <Label fx:id="statuslabel" layoutX="80.0" layoutY="602.0" prefHeight="18.0" prefWidth="553.0" text="The status of this month: ">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="statusDayes" layoutX="59.0" layoutY="449.0" prefHeight="18.0" prefWidth="365.0" textFill="#e10000">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

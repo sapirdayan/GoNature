@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StayTimeVisitsController">
+   <children>
+      <Text layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label layoutX="200.0" layoutY="28.0" prefHeight="23.0" prefWidth="237.0" text="Visitng report by enter time" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="73.0" fitWidth="620.0" layoutY="64.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="152.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="MonthCombo" layoutX="61.0" layoutY="191.0" prefHeight="23.0" prefWidth="146.0" promptText="Please Select">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.15" color="#c0f2c3" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </ComboBox>
+      <Label layoutX="62.0" layoutY="171.0" text="Please choose month:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="264.0" prefHeight="26.0" prefWidth="135.0" text="Please choose view:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ComboView" layoutX="61.0" layoutY="288.0" prefHeight="25.0" prefWidth="146.0" promptText="Please Select">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.15" color="#c0f2c3" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </ComboBox>
+      <Label layoutX="61.0" layoutY="354.0" prefHeight="26.0" prefWidth="163.0" text="Please choose enter time:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="264.0" prefHeight="25.0" prefWidth="314.0" text="If you choose in view 'daily', please Choose date:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="fromcombo" layoutX="61.0" layoutY="380.0" prefHeight="18.0" prefWidth="146.0" promptText="From">
+         <effect>
+            <InnerShadow color="#c0f2c3" />
+         </effect>
+      </ComboBox>
+      <ComboBox fx:id="tocombo" layoutX="61.0" layoutY="421.0" prefHeight="18.0" prefWidth="146.0" promptText="To">
+         <effect>
+            <InnerShadow color="#c0f2c3" />
+         </effect>
+      </ComboBox>
+      <DatePicker fx:id="dailycombo" layoutX="292.0" layoutY="288.0" prefHeight="25.0" prefWidth="146.0">
+         <effect>
+            <InnerShadow color="#c0f2c3" />
+         </effect>
+      </DatePicker>
+      <Button fx:id="backbtn" layoutX="456.0" layoutY="421.0" mnemonicParsing="false" onAction="#backfunc" prefHeight="26.0" prefWidth="54.0" text="Back">
+         <effect>
+            <InnerShadow choke="0.15" color="#8d7d7d" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+      <Button fx:id="okbtn" layoutX="388.0" layoutY="422.0" mnemonicParsing="false" onAction="#okfunc" prefHeight="25.0" prefWidth="54.0" text="Ok">
+         <effect>
+            <InnerShadow choke="0.15" color="#6ba86e" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+      <Label fx:id="idtxt" layoutX="485.0" layoutY="31.0" textAlignment="RIGHT" />
+      <Label fx:id="logoutbtn1" alignment="TOP_CENTER" layoutX="553.0" layoutY="28.0" lineSpacing="1.0" onMouseClicked="#logoutfunc" text="(Log out)" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="327.0" layoutY="65.0" startX="217.017578125" startY="-34.66667175292969" />
+   </children>
+</Pane>

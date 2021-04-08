@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EditAnOrderController">
+   <children>
+      <Text layoutX="49.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visiting time">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="49.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="EmailTxt" layoutX="223.0" layoutY="385.0" />
+      <Text layoutX="49.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The requested park" wrappingWidth="158.01869233697653">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="CancelBtn" layoutX="517.0" layoutY="470.0" mnemonicParsing="false" onAction="#CancelFunc" prefHeight="25.0" prefWidth="97.0" text="Cancel">
+         <effect>
+            <InnerShadow color="#ab1c1c" />
+         </effect></Button>
+      <Button fx:id="UpdateBtn" layoutX="294.0" layoutY="470.0" mnemonicParsing="false" onAction="#UpdateFunc" prefHeight="25.0" prefWidth="97.0" text="Update">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.15" color="#2c8d1b" height="30.0" radius="14.5" width="30.0" />
+         </effect></Button>
+      <Button fx:id="DeleteOrderBtn" layoutX="404.0" layoutY="470.0" mnemonicParsing="false" onAction="#DeleteOrderFunc" prefHeight="25.0" prefWidth="97.0" text="Delete order">
+         <effect>
+            <InnerShadow color="#a20f0f" />
+         </effect></Button>
+      <Text layoutX="49.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Order No." wrappingWidth="158.01869233697653">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#e62222" layoutX="127.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#e62222" layoutX="113.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="13.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label layoutX="222.0" layoutY="22.0" text="Edit An Order " underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="164.0" fitWidth="669.0" layoutY="63.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="177.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="517.0" layoutY="25.0" prefHeight="17.0" prefWidth="77.0" text="208166371" textAlignment="RIGHT" />
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="381.0" layoutY="59.0" startX="217.017578125" startY="-34.66667175292969" />
+      <Label fx:id="logoutbtn1" alignment="TOP_CENTER" layoutX="608.0" layoutY="22.0" lineSpacing="1.0" onMouseClicked="#logoutfunc" text="(Log out)" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="382.0" layoutY="59.0" startX="217.017578125" startY="-34.66667175292969" />
+      <Text layoutX="49.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of visit">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="DateOfVisit" layoutX="222.0" layoutY="270.0" prefHeight="25.0" prefWidth="150.0" />
+      <Text layoutX="50.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of visitors">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type of  order">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="TypeCombo" layoutX="222.0" layoutY="420.0" prefWidth="150.0" promptText="Select type" />
+      <Text fill="#e62222" layoutX="139.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#e62222" layoutX="94.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#e62222" layoutX="165.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#e62222" layoutX="131.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="TimeCombo" layoutX="222.0" layoutY="309.0" prefWidth="150.0" promptText="Select time" />
+      <Label fx:id="ParkName" layoutX="223.0" layoutY="233.0" prefHeight="15.0" prefWidth="149.0">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="NumberOfVisitors" layoutX="223.0" layoutY="345.0" prefWidth="150.0" promptText="Number of visitors" />
+      <TextField fx:id="OrderNum" layoutX="222.0" layoutY="164.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button fx:id="OkBtn" layoutX="315.0" layoutY="201.0" mnemonicParsing="false" onAction="#OkFunc" prefHeight="25.0" prefWidth="56.0" text="Ok">
+         <font>
+            <Font name="David Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow color="#3db457" />
+         </effect>
+      </Button>
+   </children>
+</Pane>

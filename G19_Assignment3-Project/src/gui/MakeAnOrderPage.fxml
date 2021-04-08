@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MakeAnOrderPageController">
+   <children>
+      <Text layoutX="59.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Date of visit">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Visiting time">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Number of visitors">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Email">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="EmailTxt" layoutX="240.0" layoutY="328.0" />
+      <Text layoutX="59.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" The requested park" wrappingWidth="158.01869233697653">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="CancelBtn" layoutX="460.0" layoutY="417.0" mnemonicParsing="false" onAction="#CancelFunc" prefHeight="25.0" prefWidth="105.0" text="Cancel">
+         <effect>
+            <InnerShadow color="#b62424" />
+         </effect></Button>
+      <Button fx:id="MakeAnOrderBtn" layoutX="285.0" layoutY="417.0" mnemonicParsing="false" onAction="#isError" prefHeight="25.0" prefWidth="105.0" text="Make an order">
+         <effect>
+            <InnerShadow choke="0.15" color="#2bb030" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="56.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Type of  order">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="TypeCombo" layoutX="239.0" layoutY="371.0" prefWidth="150.0" promptText="Select type" />
+      <Text fill="RED" layoutX="181.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="139.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="141.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="178.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="110.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="143.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text layoutX="13.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label layoutX="222.0" layoutY="22.0" text="Make an order page" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="164.0" fitWidth="669.0" layoutY="63.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="169.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="536.0" layoutY="25.0" text="208166371" textAlignment="RIGHT" />
+      <Label fx:id="logoutbtn1" alignment="TOP_CENTER" layoutX="604.0" layoutY="22.0" lineSpacing="1.0" onMouseClicked="#logoutfunc" text="(Log out)" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="378.0" layoutY="59.0" startX="217.017578125" startY="-34.66667175292969" />
+      <DatePicker fx:id="DateOfVisit" layoutX="239.0" layoutY="206.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="TimeCombo" layoutX="239.0" layoutY="245.0" prefWidth="150.0" promptText="Select time" />
+      <ComboBox fx:id="ParkCombo" layoutX="239.0" layoutY="164.0" prefWidth="150.0" promptText="Select park" />
+      <ComboBox fx:id="NumberOfVisitors" layoutX="239.0" layoutY="286.0" prefWidth="150.0" promptText="Number of visitors" />
+      <Label fx:id="help" layoutX="400.0" layoutY="246.0" prefHeight="16.0" prefWidth="5.0" text="?" textFill="#e40a0a">
+         <font>
+            <Font name="Corbel Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#e12020" height="34.84" radius="15.4375" width="28.91" />
+         </effect>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ConfirmationParametersController">
+   <children>
+      <Text layoutX="13.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="74.0" fitWidth="683.0" layoutY="53.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="175.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="507.0" layoutY="25.0" prefHeight="17.0" prefWidth="88.0" />
+      <Label fx:id="logoutbtntxt" layoutX="609.0" layoutY="22.0" lineSpacing="1.0" onMouseClicked="#logoutfunc" text="(Log out)" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="383.0" layoutY="59.0" startX="217.017578125" startY="-34.66667175292969" />
+      <Label layoutX="204.0" layoutY="22.0" text="Confirmation of parameters" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="GapconfirmBtn" layoutX="410.0" layoutY="162.0" mnemonicParsing="false" onAction="#GapconfirmFunc" prefHeight="25.0" prefWidth="66.0" text="confirm">
+         <effect>
+            <InnerShadow choke="0.15" color="#2c8d1b" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+      <Text layoutX="63.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gap parameter" textAlignment="CENTER" wrappingWidth="109.41928204521537">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="Maxquotaconfirmbtn" layoutX="410.0" layoutY="200.0" mnemonicParsing="false" onAction="#MaxquotaconfirmFunc" prefHeight="25.0" prefWidth="66.0" text="confirm">
+         <effect>
+            <InnerShadow choke="0.15" color="#2c8d1b" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+      <Button fx:id="StayTimeconfirmbtn" layoutX="410.0" layoutY="237.0" mnemonicParsing="false" onAction="#StayTimeconfirmFunc" prefHeight="25.0" prefWidth="66.0" text="confirm">
+         <effect>
+            <InnerShadow choke="0.15" color="#2c8d1b" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </Button>
+      <Text layoutX="63.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maxquota parameter" textAlignment="CENTER" wrappingWidth="148.50780948996544">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="63.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StayTime parameter" textAlignment="CENTER" wrappingWidth="148.50780948996544">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="BackToHomePage" layoutX="230.0" layoutY="291.0" mnemonicParsing="false" onAction="#BackToHomePageFunc" prefHeight="25.0" prefWidth="188.0" text="Back To The Home Page" />
+      <Button fx:id="refusingbtn" layoutX="482.0" layoutY="162.0" mnemonicParsing="false" onAction="#refusingGapFunc" prefHeight="25.0" prefWidth="66.0" text="refusing">
+         <effect>
+            <InnerShadow color="#791f1f" />
+         </effect>
+      </Button>
+      <Button fx:id="refusingbtn" layoutX="482.0" layoutY="200.0" mnemonicParsing="false" onAction="#refusingMaxquotaFunc" prefHeight="25.0" prefWidth="66.0" text="refusing">
+         <effect>
+            <InnerShadow color="#791f1f" />
+         </effect>
+      </Button>
+      <Button fx:id="refusingbtn" layoutX="482.0" layoutY="237.0" mnemonicParsing="false" onAction="#refusingStayTimeFunc" prefHeight="25.0" prefWidth="66.0" text="refusing">
+         <effect>
+            <InnerShadow color="#791f1f" />
+         </effect>
+      </Button>
+      <Label fx:id="MaxqoutaParameters" layoutX="230.0" layoutY="203.0" prefHeight="20.0" prefWidth="132.0" />
+      <Label fx:id="GapParameters" layoutX="230.0" layoutY="166.0" prefHeight="20.0" prefWidth="132.0" />
+      <Label fx:id="StayTimeParameters" layoutX="230.0" layoutY="240.0" prefHeight="20.0" prefWidth="132.0" />
+   </children>
+</Pane>

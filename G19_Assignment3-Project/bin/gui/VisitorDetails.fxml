@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane blendMode="DARKEN" prefHeight="464.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.VisitorsDetailsController">
+   <children>
+      <ImageView fitHeight="93.0" fitWidth="529.0" layoutY="38.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtMail" layoutX="144.0" layoutY="299.0" prefHeight="25.0" prefWidth="215.0" />
+      <Label layoutX="20.0" layoutY="262.0" prefHeight="17.0" prefWidth="101.0" text="Visitor ID" textFill="#171701" />
+      <Label contentDisplay="CENTER" layoutX="20.0" layoutY="188.0" prefHeight="17.0" prefWidth="62.0" text="First Name" textFill="#1b1b01" />
+      <TextField fx:id="txtFname" layoutX="144.0" layoutY="184.0" prefHeight="25.0" prefWidth="215.0" />
+      <Label layoutX="20.0" layoutY="225.0" prefHeight="17.0" prefWidth="89.0" text="Last Name" textFill="#1b1a00" />
+      <TextField fx:id="txtLname" layoutX="144.0" layoutY="221.0" prefHeight="25.0" prefWidth="215.0" />
+      <Label contentDisplay="CENTER" layoutX="148.0" layoutY="-4.0" prefHeight="44.0" prefWidth="115.0" text="Visitor Details" underline="true">
+         <font>
+            <Font name="David Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVisitorID" layoutX="144.0" layoutY="258.0" prefHeight="25.0" prefWidth="215.0" />
+      <TextField fx:id="txtPhoneNumber" layoutX="144.0" layoutY="341.0" prefHeight="25.0" prefWidth="215.0" />
+      <Label layoutX="20.0" layoutY="303.0" prefHeight="17.0" prefWidth="76.0" text="Mail" textFill="#171701" />
+      <Label layoutX="20.0" layoutY="345.0" prefHeight="17.0" prefWidth="89.0" text="Phone Number" textFill="#171701" />
+      <Text layoutX="15.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature" textAlignment="CENTER" wrappingWidth="132.650390625">
+         <font>
+            <Font name="David Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="CancelBtn" layoutX="402.0" layoutY="396.0" mnemonicParsing="false" onAction="#CancelFunc" prefHeight="25.0" prefWidth="105.0" text="Cancel">
+         <effect>
+            <InnerShadow color="#b62424" />
+         </effect>
+      </Button>
+      <Button fx:id="OkBtn" layoutX="252.0" layoutY="396.0" mnemonicParsing="false" onAction="#OkFunc" prefHeight="25.0" prefWidth="105.0" text="Ok">
+         <effect>
+            <InnerShadow choke="0.15" color="#2bb030" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="117.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="264.13671875">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#e83131" layoutX="20.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Traveler !!" wrappingWidth="264.13671875">
+         <font>
+            <Font name="David Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#e83131" layoutX="20.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your details to keep them in our system." wrappingWidth="396.13671875">
+         <font>
+            <Font name="David Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="82.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="78.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="78.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="78.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="48.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="106.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="82.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="82.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+      <Text fill="RED" layoutX="82.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" />
+   </children>
+</AnchorPane>

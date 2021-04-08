@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="363.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerPortFrameController">
+   <children>
+      <Button fx:id="ConnectBtn" layoutX="209.0" layoutY="245.0" mnemonicParsing="false" onAction="#ConnectFunc" text="Connect" />
+      <Label layoutX="58.0" layoutY="200.0" text="Port:">
+         <font>
+            <Font name="David" size="20.0" />
+         </font></Label>
+      <Label layoutX="58.0" layoutY="165.0" text="IP:">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="129.0" text="Name:">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="290.0" prefHeight="23.0" prefWidth="155.0" text="Connection Status:">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="92.0" prefHeight="23.0" prefWidth="276.0" text="Network connectivity information">
+         <font>
+            <Font name="David" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="ConnLabel" layoutX="195.0" layoutY="293.0" text="DisConnected">
+         <font>
+            <Font name="David" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="NameLabel" layoutX="142.0" layoutY="132.0" />
+      <Label fx:id="IPLabel" layoutX="142.0" layoutY="168.0" />
+      <Text layoutX="9.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature" wrappingWidth="138.983642578125">
+         <font>
+            <Font name="David Bold" size="30.0" />
+         </font>
+      </Text>
+      <Label fx:id="PortLabel1" layoutX="141.0" layoutY="203.0" prefHeight="17.0" prefWidth="102.0" />
+      <ImageView fitHeight="37.0" fitWidth="338.0" layoutX="-3.0" layoutY="41.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="8.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="312.13671875">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

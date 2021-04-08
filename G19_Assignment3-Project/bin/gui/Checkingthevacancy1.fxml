@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CheckingVacancyController">
+   <children>
+      <Text layoutX="13.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label layoutX="201.0" layoutY="22.0" text="Checking the vacancy in the park" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="74.0" fitWidth="683.0" layoutY="53.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="175.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="519.0" layoutY="25.0" text="nasmat.ammar" />
+      <Label fx:id="logoutbtn" layoutX="609.0" layoutY="22.0" lineSpacing="1.0" onMouseClicked="#logoutfunc" text="(Log out)" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="383.0" layoutY="59.0" startX="217.017578125" startY="-34.66667175292969" />
+      <Button fx:id="CheckBtn" layoutX="307.0" layoutY="342.0" mnemonicParsing="false" onAction="#CheckFunc" prefHeight="25.0" prefWidth="66.0" text="Check">
+         <effect>
+            <InnerShadow choke="0.15" color="#21a00b" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="59.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="43.84115041792393">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="Cancelbtn" layoutX="474.0" layoutY="342.0" mnemonicParsing="false" onAction="#CancelFunc" prefHeight="25.0" prefWidth="66.0" text="Cancel">
+         <effect>
+            <InnerShadow color="#ab5137" />
+         </effect>
+      </Button>
+      <Text layoutX="59.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="43.841152995824814">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of the park" textAlignment="CENTER" wrappingWidth="121.84115299582481">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#e62222" layoutX="94.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#e62222" layoutX="98.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="a" layoutX="59.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check how many places there are in the park before you place a reservation:">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No. of visitors" wrappingWidth="98.50783664156916">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#e62222" layoutX="157.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="DateOfVisit" layoutX="221.0" layoutY="222.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="TimeCombo" layoutX="221.0" layoutY="262.0" prefWidth="150.0" promptText="Select time" />
+      <ComboBox fx:id="NumberOfVisitors" layoutX="221.0" layoutY="302.0" prefWidth="150.0" promptText="Number of visitors" />
+      <Label fx:id="ParkName" layoutX="221.0" layoutY="188.0" prefHeight="17.0" prefWidth="150.0">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

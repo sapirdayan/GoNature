@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DiscountController">
+   <children>
+      <Text layoutX="62.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click the desired discount to view more information.">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount value:">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount type:">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date:">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Below are the discounts the park manager is waiting for you to approve." wrappingWidth="493.3520053252578">
+         <font>
+            <Font name="Elephant" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="RefuseBtn" layoutX="282.0" layoutY="492.0" mnemonicParsing="false" onAction="#RefuseFunc" prefHeight="25.0" prefWidth="79.0" text="Refuse">
+         <effect>
+            <InnerShadow color="#2b2323" />
+         </effect></Button>
+      <Button fx:id="Details" layoutX="534.0" layoutY="286.0" mnemonicParsing="false" onAction="#DetailsFunc" prefHeight="25.0" prefWidth="79.0" text="Details">
+         <effect>
+            <InnerShadow choke="0.15" color="#2bb030" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="62.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End date:">
+         <font>
+            <Font name="Elephant" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="13.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label layoutX="222.0" layoutY="22.0" text="Discount confirmation " underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="164.0" fitWidth="669.0" layoutY="63.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="169.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="536.0" layoutY="25.0" text="208166371" textAlignment="RIGHT" />
+      <Label fx:id="LogoutBtn" alignment="TOP_CENTER" layoutX="604.0" layoutY="22.0" lineSpacing="1.0" onMouseClicked="#LogoutFunc" text="(Log out)" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="378.0" layoutY="59.0" startX="217.017578125" startY="-34.66667175292969" />
+      <ComboBox fx:id="ComboDiscount" layoutX="60.0" layoutY="252.0" prefHeight="25.0" prefWidth="551.0" promptText="Select discount" />
+      <Button fx:id="Approvebtn" layoutX="196.0" layoutY="492.0" mnemonicParsing="false" onAction="#ApproveFunc" prefHeight="25.0" prefWidth="79.0" text="Approval">
+         <effect>
+            <InnerShadow color="#2b2323" />
+         </effect>
+      </Button>
+      <Label fx:id="DiscountValue" layoutX="176.0" layoutY="311.0" prefHeight="17.0" prefWidth="119.0" />
+      <Label fx:id="DiscountType" layoutX="176.0" layoutY="352.0" prefHeight="17.0" prefWidth="203.0" />
+      <Label fx:id="StartDate" layoutX="176.0" layoutY="394.0" prefHeight="17.0" prefWidth="119.0" />
+      <Label fx:id="EndDate" layoutX="176.0" layoutY="437.0" prefHeight="17.0" prefWidth="119.0" />
+      <Button fx:id="Back" layoutX="536.0" layoutY="492.0" mnemonicParsing="false" onAction="#BackFunc" prefHeight="25.0" prefWidth="79.0" text="Back" />
+   </children>
+</Pane>

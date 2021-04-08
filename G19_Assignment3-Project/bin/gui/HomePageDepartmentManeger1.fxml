@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DeparmentManegerController">
+   <children>
+      <Text layoutX="7.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature" textAlignment="CENTER" wrappingWidth="178.31704711914062">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="523.0" layoutY="140.0" prefHeight="17.0" prefWidth="76.0" textAlignment="RIGHT" />
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="386.0" layoutY="174.0" startX="217.017578125" startY="-34.66667175292969" />
+      <ImageView fitHeight="74.0" fitWidth="676.0" layoutY="53.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="137.0" text="Menu">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="566.0" endY="2.0" layoutX="106.0" layoutY="166.0" startX="-109.0" />
+      <Label fx:id="ConfirmationOParameters" layoutX="54.0" layoutY="234.0" onMouseClicked="#ConfirmationOParametersFunc" text="Parameters">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="20.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Ecommerce-Discount-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="20.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_394736.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Line endX="99.95954895019531" endY="-222.0" layoutX="138.0" layoutY="350.0" startX="99.95954895019531" startY="137.0" />
+      <Line endX="572.2073974609375" endY="-1.0" layoutX="103.0" layoutY="128.0" startX="-103.0" startY="0.06439208984375" strokeMiterLimit="20.0" strokeWidth="3.0" />
+      <Line endX="572.2073974609375" endY="1.0" layoutX="103.0" layoutY="52.0" startX="-103.0" startY="0.06439208984375" strokeMiterLimit="20.0" strokeWidth="3.0" />
+      <Label layoutX="205.0" layoutY="19.0" text="Department manager home page" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ReporeCombo" layoutX="260.0" layoutY="318.0" onAction="#CreateReport" prefHeight="26.0" prefWidth="279.0" promptText="Choose the report you want to create">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                  <MenuItem mnemonicParsing="false" text="Cancellation Report" />
+                <MenuItem mnemonicParsing="false" text="Visitation Report" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+         <effect>
+            <InnerShadow color="#6c5c5c" />
+         </effect></ComboBox>
+      <Label layoutX="260.0" layoutY="179.0" text="Hello department manager!" textFill="#c71616">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ContactUsBtn" fitHeight="17.0" fitWidth="22.0" layoutX="640.0" layoutY="22.0" onMouseClicked="#ContactUsFunc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_97207.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="LogoutBtn" layoutX="616.0" layoutY="140.0" onMouseClicked="#LogoutFunc" text="Logout" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextArea fx:id="Reminder" layoutX="7.0" layoutY="308.0" prefHeight="175.0" prefWidth="223.0">
+         <font>
+            <Font name="David Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#6c5c5c" />
+         </effect></TextArea>
+      <Line endX="180.4595184326172" layoutX="57.0" layoutY="274.0" startX="-54.00001525878906" />
+      <Label fx:id="DepDiscount" layoutX="53.0" layoutY="183.0" onMouseClicked="#DepDiscountFunc" text="Discount">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextArea layoutX="260.0" layoutY="203.0" prefHeight="85.0" prefWidth="363.0" text="If you want to know,&#10;how many  visitors are present in the park now.&#10;">
+         <font>
+            <Font name="David Bold" size="16.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="NumberVisitors" layoutX="546.0" layoutY="258.0" mnemonicParsing="false" onAction="#NumberVisitorsFunc" text="Click here">
+         <effect>
+            <InnerShadow choke="0.15" color="#268e29" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="7.0" layoutY="281.0" text="Reminder:" textFill="#c71616">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ListOfReports" layoutX="260.0" layoutY="358.0" onAction="#ListOfReportfunc" prefHeight="25.0" prefWidth="279.0" promptText="List of reports">
+         <effect>
+            <InnerShadow color="#6c5c5c" />
+         </effect></ComboBox>
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</Pane>

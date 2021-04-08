@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="LabelStatus" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.reportChoosingDepController">
+   <children>
+      <Text layoutX="13.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GoNature">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Text>
+      <Label layoutX="209.0" layoutY="22.0" prefHeight="23.0" prefWidth="148.0" text="Choosing report" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="86.0" fitWidth="578.0" layoutY="53.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="148.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our nature, your pleasure" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Text>
+      <Label fx:id="idtxt" layoutX="404.0" layoutY="25.0" prefHeight="17.0" prefWidth="79.0" />
+      <Label fx:id="logoutbtntxt" layoutX="506.0" layoutY="25.0" lineSpacing="1.0" onMouseClicked="#logoutFunc" text="(Log out)" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Line endX="217.017578125" endY="-15.666656494140625" layoutX="280.0" layoutY="58.0" startX="217.017578125" startY="-34.66667175292969" />
+      <ComboBox fx:id="MonthhCombo" layoutX="284.0" layoutY="186.0" prefHeight="23.0" prefWidth="174.0" promptText="Please Select">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.15" color="#c0f2c3" height="30.0" radius="14.5" width="30.0" />
+         </effect></ComboBox>
+      <Label layoutX="285.0" layoutY="161.0" text="Please Choose month">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="458.0" layoutY="261.0" mnemonicParsing="false" onAction="#BackFunc" prefHeight="26.0" prefWidth="54.0" text="Back">
+         <effect>
+            <InnerShadow choke="0.15" color="#8d7d7d" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="Okeybtn" layoutX="481.0" layoutY="186.0" mnemonicParsing="false" onAction="#ComboViewFunc" text="Ok">
+         <effect>
+            <InnerShadow choke="0.15" color="#c0f2c3" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="YearComboNumber" layoutX="61.0" layoutY="186.0" prefHeight="23.0" prefWidth="174.0" promptText="Please Select">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="0.15" color="#c0f2c3" height="30.0" radius="14.5" width="30.0" />
+         </effect>
+      </ComboBox>
+      <Label layoutX="62.0" layoutY="161.0" text="Please Choose year">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

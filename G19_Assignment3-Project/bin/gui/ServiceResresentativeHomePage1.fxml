@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServiceResresentativeController">
+   <children>
+      <Label layoutX="24.0" prefHeight="64.0" prefWidth="307.0" text="GoNature               ">
+         <font>
+            <Font name="David Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="20.0" prefHeight="30.0" prefWidth="307.0" text="Service resresentative home page" underline="true">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="692.0" layoutX="-23.0" layoutY="64.0" startX="23.0" startY="1.0" strokeWidth="3.0" />
+      <ImageView fx:id="ContactUsBtn" fitHeight="17.0" fitWidth="22.0" layoutX="632.0" layoutY="27.0" onMouseClicked="#ContactUsFunc" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/img_97207.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Line endX="673.0" layoutX="-3.0" layoutY="140.0" startX="4.0" strokeWidth="3.0" />
+      <Label layoutX="203.0" layoutY="86.0" text="Our nature ,your pleasure">
+         <font>
+            <Font name="David Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="144.0" fitWidth="673.0" layoutX="-1.0" layoutY="65.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/321P1030804.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="24.878692626953125" endY="295.0" layoutX="257.0" layoutY="177.0" startX="24.878692626953125" startY="-36.0921630859375" />
+      <Label fx:id="Guide" layoutX="59.0" layoutY="211.0" onMouseClicked="#GuideFunc" text="Add Guide">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="FamilySubScription" layoutX="59.0" layoutY="257.0" onMouseClicked="#FamilySubScriptionFunc" text="Add family Subscription">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="15.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="15.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/file.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="19.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/zoo-003-512.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Accordion />
+      <Label fx:id="LogoutBtn" layoutX="621.0" layoutY="151.0" onMouseClicked="#LogoutFunc" text="Logout" textFill="#cc1616" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="idtxt" layoutX="509.0" layoutY="153.0" prefHeight="18.0" prefWidth="108.0" />
+      <Line endX="-1.5" endY="36.5" layoutX="618.0" layoutY="135.0" startX="-1.5" startY="16.5" />
+      <TextArea cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="286.0" layoutY="226.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="97.0" prefWidth="383.0" scaleShape="false" text="Hi Service Representative!&#10;We ask you to politely answer our customers and &#10;maintain a pleasant atmosphere during the conversation.">
+         <font>
+            <Font name="David Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="87.0" layoutY="150.0" text="Menu">
+         <font>
+            <Font name="David Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="554.0" layoutX="116.0" layoutY="176.0" startX="-115.00001525878906" />
+      <Label layoutX="286.0" layoutY="194.0" prefHeight="25.0" prefWidth="225.0" text="Hello, Service resresentative" textFill="#cc1616">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
